@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HTML Semantics</title>
+    <style>
+         * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+        header{
+            background-color:rgb(3, 56, 8) ;
+            color: aliceblue;
+            text-align: center;
+            padding: 10px;
+        }
+        nav{
+            background-color:rgb(24, 107, 31) ;
+            padding: 10px;
+        }
+        nav a{
+            text-decoration: none;
+            margin-right: 15px;
+            padding: 10px;
+            color: aliceblue;
+        }
+        nav a:hover{
+            background-color:aliceblue ;
+            color: rgb(235, 59, 59);
+        }
+        .container {
+            display: flex;
+            padding: 20px;
+            gap: 20px;
+        }
+       /* .card{
+            display: flex; */
+        }
+        .left-side{
+            flex: 2;
+        }
+        section div, article{
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 20px;
+            box-shadow: 3px 5px 3px 5px rgba(0, 0, 100, 0.4);
+        }
+        img{
+            width: 100px;
+            height: 100px;
+            border-radius: 50%;
+            box-shadow: 3px 5px 3px rgba(0, 0, 100, 0.4);
+            margin-right: 10px;
+            float: left;
+        }
+        .btn{
+            border: 1px solid none;
+            background-color: rgb(3, 56, 8) ;
+            border-radius: 5px;
+            padding: 7px;
+            text-decoration: none;
+            color: aliceblue;
+        }
+        .btn:hover{
+            background-color: rgb(24, 107, 31);
+        }
+        aside{
+            flex: 1;
+            background-color: aliceblue;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 0 20px; /* top-botton/ left-right */
+            box-shadow: 3px 5px 3px 5px rgba(0, 0, 100, 0.4);/*right/down/blur/spread*/
+        }
+        footer{
+            background-color:rgb(3, 56, 8)  ;
+            color: aliceblue;
+            text-align: center;
+            padding: 20px;
+            font-size: small;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Hello</h1>
+        <p>Welcome to my Website</p>
+    </header>
+    <nav>
+        <a href="#">Home</a>
+        <a href="#">Articles</a>
+        <a href="#">About</a>
+        <a href="#">Contact</a>
+    </nav>
+    <div class="container">
+        <div class="left-side">
+            <section class="card">
+                <div>
+                    <img src="images/boy.jpg" alt="Image">
+                    <h3>Card Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa id eaque quaerat nulla deleniti error, aliquam iusto nihil quidem qui, nemo quo accusantium veniam maxime, libero tempora dolores neque.</p><br>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                <div>
+                    <img src="images/girl.jpg" alt="Image">
+                    <h3>Card Title</h3>
+                    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Illo culpa id eaque quaerat nulla deleniti error, aliquam iusto nihil quidem qui, nemo quo accusantium veniam maxime, libero tempora dolores neque.</p><br>
+                    <a href="#" class="btn">Read More</a>
+                </div>
+                
+            </section>
+            <article>
+                <h2>Article</h2>
+                <p>This is an article area where you can write information, lessons, blogs, or content.</p>
+            </article>
+        </div>
+        <aside>
+            <h2>Sidebar</h2>
+            <p>This is the sidebar—use it for news, links, announcements, or ads.</p>
+        </aside>
+    </div>
+    <footer>
+        © 2025 My Website | All Rights Reserved
+    </footer>
+
+</body>
+</html>
